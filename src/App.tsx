@@ -262,21 +262,6 @@ const ChatArea = () => {
           </div>
         </div>
         
-        <div className="from-to-selectors">
-          <div className="selector">
-            <span>From:</span>
-            <select className="select-box">
-              <option>No Number Available</option>
-            </select>
-          </div>
-          <div className="selector">
-            <span>To:</span>
-            <select className="select-box">
-              <option>+63 961 348 0474</option>
-            </select>
-          </div>
-        </div>
-
         <div className="message-editor">
           <textarea className="message-textarea" placeholder="Type a message"></textarea>
           <div className="editor-toolbar">
