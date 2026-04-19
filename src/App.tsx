@@ -12,7 +12,7 @@ import './App.css';
 const dummyConversations = [
   { id: 1, name: 'Justin Garcia', time: '3:34 PM', preview: 'Hey Justin! Just got your quote fo...', initials: 'JG', color: '#71cf88', unread: true },
   { id: 11, name: 'Alexander', time: '8:02 AM', preview: 'Hey Alexander! Just got your quote...', initials: 'AL', color: '#3B82F6', unread: true },
-  { id: 12, name: 'Alexander Millar', time: '8:20 AM', preview: 'New Lead from Website Chat Widget!', initials: 'AM', color: '#10B981', unread: true },
+  { id: 12, name: 'James Michael', time: '8:20 AM', preview: 'New Lead from Website Chat Widget!', initials: 'JM', color: '#10B981', unread: true },
   { id: 2, name: '(832) 867-0318', time: '1:12 PM', preview: 'Inbound Call', initials: '+1', color: '#9CA3AF', unread: true },
   { id: 3, name: 'Sarah Jenkins', time: '11:45 AM', preview: 'Hey Sarah! Sorry I missed you...', initials: 'SJ', color: '#FBBF24', unread: false },
   { id: 4, name: 'Mike Robinson', time: '10:30 AM', preview: 'Automated follow up: Hi Mike...', initials: 'MR', color: '#60A5FA', unread: false },
@@ -168,7 +168,7 @@ const AlexanderMillarChat = () => {
   return (
     <div className="main-chat">
       <div className="chat-header">
-        <div className="chat-title">Alexander Millar</div>
+        <div className="chat-title">James Michael</div>
         <div className="chat-actions">
           <button className="icon-btn no-border"><Folder size={18} /></button>
           <button className="icon-btn no-border"><Star size={18} /></button>
@@ -194,7 +194,7 @@ const AlexanderMillarChat = () => {
           </div>
           <p style={{marginBottom: '12px', fontWeight: 600}}>New Lead from Website Chat Widget!</p>
           <p style={{marginBottom: '8px'}}>Info:</p>
-          <p style={{marginBottom: '4px'}}>- Name: Alexander Millar</p>
+          <p style={{marginBottom: '4px'}}>- Name: James Michael</p>
           <p style={{marginBottom: '4px'}}>- Phone: CHECK LEADCONNECTOR APP</p>
           <p style={{marginBottom: '12px'}}>- Message: We are looking to have our backyard and pool deck area just generally maintained, weeded, etc</p>
           <p style={{marginBottom: '12px'}}>We've let them know you'll be in touch soon!</p>
