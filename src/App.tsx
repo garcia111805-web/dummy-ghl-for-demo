@@ -106,7 +106,7 @@ const AlexanderChat = () => {
           <p style={{marginBottom: '12px'}}>Hey Alexander! Just got your quote form!</p>
           <p style={{marginBottom: '12px'}}>I'll be in touchr shortly!</p>
           <p style={{marginBottom: '12px'}}>
-            -justin with jstn systems<br/>
+            -mark from mark solar<br/>
             Reply STOP to unsubscribe.
           </p>
           <div className="status-text" style={{color: '#E5E7EB', display: 'flex', justifyContent: 'flex-end', marginTop: 4, marginBottom: 0, fontSize: '10px'}}>
@@ -300,11 +300,11 @@ const ChatArea = ({ activeId }: { activeId: number }) => {
             https://jstnsystems.com/contact-us
           </a>
           <p style={{marginBottom: '12px'}}>
-            -justin with jstn systems 😁
+            -mark from mark solar
           </p>
           <p style={{fontSize: '12px', opacity: 0.9}}>
             Reply STOP to unsubscribe.<br/>
-            Thanks, jstn systems
+            Thanks, mark solar
           </p>
           <div className="status-text" style={{color: '#E5E7EB', display: 'flex', justifyContent: 'flex-end', marginTop: 4, marginBottom: 0, fontSize: '10px'}}>
              <CheckSquare size={10} style={{marginRight: 2}}/> 08:10 AM
