@@ -12,6 +12,7 @@ import './App.css';
 const dummyConversations = [
   { id: 1, name: 'Justin Garcia', time: '3:34 PM', preview: 'Hey Justin! Just got your quote fo...', initials: 'JG', color: '#71cf88', unread: true },
   { id: 11, name: 'Alexander', time: '8:02 AM', preview: 'Hey Alexander! Just got your quote...', initials: 'AL', color: '#3B82F6', unread: true },
+  { id: 12, name: 'Alexander Millar', time: '8:20 AM', preview: 'New Lead from Website Chat Widget!', initials: 'AM', color: '#10B981', unread: true },
   { id: 2, name: '(832) 867-0318', time: '1:12 PM', preview: 'Inbound Call', initials: '+1', color: '#9CA3AF', unread: true },
   { id: 3, name: 'Sarah Jenkins', time: '11:45 AM', preview: 'Hey Sarah! Sorry I missed you...', initials: 'SJ', color: '#FBBF24', unread: false },
   { id: 4, name: 'Mike Robinson', time: '10:30 AM', preview: 'Automated follow up: Hi Mike...', initials: 'MR', color: '#60A5FA', unread: false },
@@ -163,8 +164,86 @@ const AlexanderChat = () => {
   );
 };
 
+const AlexanderMillarChat = () => {
+  return (
+    <div className="main-chat">
+      <div className="chat-header">
+        <div className="chat-title">Alexander Millar</div>
+        <div className="chat-actions">
+          <button className="icon-btn no-border"><Folder size={18} /></button>
+          <button className="icon-btn no-border"><Star size={18} /></button>
+          <button className="icon-btn no-border"><Mail size={18} /></button>
+          <button className="icon-btn no-border"><Trash2 size={18} /></button>
+          <button className="icon-btn no-border"><AlignLeft size={18} /></button>
+          <div style={{display: 'flex', alignItems: 'center', marginLeft: '12px', color: '#6B7280', fontSize: '13px'}}>
+            <ChevronDown size={14} style={{transform: 'rotate(90deg)'}}/>
+            <ChevronDown size={14} style={{transform: 'rotate(-90deg)'}}/>
+          </div>
+        </div>
+      </div>
+
+      <div className="chat-history">
+        <div style={{ alignSelf: 'center', fontSize: '12px', color: '#9CA3AF', margin: '16px 0 24px 0' }}>
+          08:20 AM
+        </div>
+
+        <div className="message-bubble message-out">
+          <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '8px'}}>
+            <span></span>
+            <MoreVertical size={14} style={{cursor: 'pointer', opacity: 0.8}} />
+          </div>
+          <p style={{marginBottom: '12px', fontWeight: 600}}>New Lead from Website Chat Widget!</p>
+          <p style={{marginBottom: '8px'}}>Info:</p>
+          <p style={{marginBottom: '4px'}}>- Name: Alexander Millar</p>
+          <p style={{marginBottom: '4px'}}>- Phone: CHECK LEADCONNECTOR APP</p>
+          <p style={{marginBottom: '12px'}}>- Message: We are looking to have our backyard and pool deck area just generally maintained, weeded, etc</p>
+          <p style={{marginBottom: '12px'}}>We've let them know you'll be in touch soon!</p>
+          <p style={{fontSize: '12px', opacity: 0.9}}>-jstn systems (Do NOT reply to this message; it's not the client!)</p>
+          <div className="status-text" style={{color: '#E5E7EB', display: 'flex', justifyContent: 'flex-end', marginTop: 4, marginBottom: 0, fontSize: '10px'}}>
+            <CheckSquare size={10} style={{marginRight: 2}}/> 08:20 AM
+          </div>
+        </div>
+      </div>
+
+      <div className="chat-input-area">
+        <div className="input-tabs">
+          <div className="input-tab active">SMS</div>
+          <div className="input-tab">WhatsApp</div>
+          <div className="input-tab internal">
+            Internal Comment
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </div>
+        </div>
+        <div className="message-editor">
+          <textarea className="message-textarea" placeholder="Type a message"></textarea>
+          <div className="editor-toolbar">
+            <div className="toolbar-left">
+              <span className="toolbar-icon"><Paperclip size={18}/></span>
+              <span className="toolbar-icon"><Smile size={18}/></span>
+              <span className="toolbar-icon"><AlignLeft size={18}/></span>
+              <span className="toolbar-icon"><Link size={18}/></span>
+              <span className="toolbar-icon"><MoreVertical size={18}/></span>
+            </div>
+            <div className="toolbar-right">
+              <span className="char-count">Segs: 0</span>
+              <button className="btn-outline">Clear</button>
+              <button className="btn-send">
+                Send <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 16 16 12 12 8"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+              </button>
+              <button className="btn-send" style={{padding: '8px'}}>
+                <Clock size={16} />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const ChatArea = ({ activeId }: { activeId: number }) => {
   if (activeId === 11) return <AlexanderChat />;
+  if (activeId === 12) return <AlexanderMillarChat />;
   return (
     <div className="main-chat">
       <div className="chat-header">
