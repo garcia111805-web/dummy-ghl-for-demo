@@ -218,14 +218,14 @@ const ChatArea = ({ activeId }: { activeId: number }) => {
             Just click the link below for a free quote and I'll get right back to you :)
           </p>
           <a href="#" style={{color: '#93C5FD', display: 'block', marginBottom: '12px', textDecoration: 'underline'}}>
-            https://marksolar.com/contact-us
+            https://jstnsystems.com/contact-us
           </a>
           <p style={{marginBottom: '12px'}}>
-            -Mark with Mark Solar 😁
+            -justin with jstn systems 😁
           </p>
           <p style={{fontSize: '12px', opacity: 0.9}}>
             Reply STOP to unsubscribe.<br/>
-            Thanks, Mark Solar
+            Thanks, jstn systems
           </p>
           <div className="status-text" style={{color: '#E5E7EB', display: 'flex', justifyContent: 'flex-end', marginTop: 4, marginBottom: 0, fontSize: '10px'}}>
              <CheckSquare size={10} style={{marginRight: 2}}/> 08:10 AM
