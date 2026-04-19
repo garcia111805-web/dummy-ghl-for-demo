@@ -198,7 +198,7 @@ const AlexanderMillarChat = () => {
           <p style={{marginBottom: '4px'}}>- Phone: CHECK LEADCONNECTOR APP</p>
           <p style={{marginBottom: '12px'}}>- Message: We are looking to have our backyard and pool deck area just generally maintained, weeded, etc</p>
           <p style={{marginBottom: '12px'}}>We've let them know you'll be in touch soon!</p>
-          <p style={{fontSize: '12px', opacity: 0.9}}>-mark solar (Do NOT reply to this message; it's not the client!)</p>
+          <p style={{fontSize: '12px', opacity: 0.9}}>-jstn systems (Do NOT reply to this message; it's not the client!)</p>
           <div className="status-text" style={{color: '#E5E7EB', display: 'flex', justifyContent: 'flex-end', marginTop: 4, marginBottom: 0, fontSize: '10px'}}>
             <CheckSquare size={10} style={{marginRight: 2}}/> 08:20 AM
           </div>
