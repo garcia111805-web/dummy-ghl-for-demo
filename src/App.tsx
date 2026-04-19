@@ -1,123 +1,12 @@
 import {
-  Search, Rocket, LayoutDashboard, MessageCircle, Calendar,
-  Users, Briefcase, CreditCard, Settings, Plus, Phone, Mail, Folder,
-  Star, Trash2, MoreVertical, Link, Paperclip, Smile, AlignLeft,
-  ChevronDown, Send, Clock, Play, Download, HelpCircle, Bell, User, CheckSquare
+  Search, MessageCircle,
+  AlignLeft, MoreVertical, Link, Paperclip, Smile,
+  ChevronDown, Clock, Play, Download, HelpCircle, Phone, Mail, Folder,
+  Star, Trash2, CheckSquare
 } from 'lucide-react';
 import './App.css';
 
-const SidebarDark = () => {
-  return (
-    <div className="sidebar-dark">
-      <div className="global-logo">
-        <img src="/logo.png" alt="Agency Logo" className="agency-logo-img" />
-      </div>
-      
-      <div className="account-switcher">
-        <div className="account-avatar">
-           <User size={16} color="#FFFFFF"/>
-        </div>
-        <div className="account-info">
-          <span className="account-name">Mark Solar</span>
-          <span className="account-location">Columbus, Ohio</span>
-        </div>
-        <ChevronDown size={14} color="#9CA3AF" />
-      </div>
 
-      <div className="search-bar-dark">
-        <Search size={14} color="#9CA3AF" />
-        <input type="text" placeholder="Search" />
-        <span className="shortcut-key">ctrlK</span>
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{color:'#10B981'}}><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
-      </div>
-
-      <div className="nav-menu">
-        <ul>
-          <li className="nav-item"><Rocket size={18} /> Launchpad</li>
-          <li className="nav-item"><LayoutDashboard size={18} /> Dashboard</li>
-          <li className="nav-item active"><MessageCircle size={18} /> Conversations</li>
-          <li className="nav-item"><Calendar size={18} /> Calendars</li>
-          <li className="nav-item"><Users size={18} /> Contacts</li>
-          <li className="nav-item"><Briefcase size={18} /> Opportunities</li>
-          <li className="nav-item"><CreditCard size={18} /> Payments</li>
-        </ul>
-        <div className="section-divider"></div>
-        <ul>
-          <li className="nav-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            AI Agents
-          </li>
-          <li className="nav-item"><Send size={18} /> Marketing</li>
-          <li className="nav-item"><Play size={18} /> Automation</li>
-          <li className="nav-item"><Folder size={18} /> Sites</li>
-          <li className="nav-item"><Users size={18} /> Memberships</li>
-        </ul>
-        <div style={{marginTop: 'auto'}}>
-          <li className="nav-item"><Settings size={18} /> Settings</li>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const SidebarLight = () => {
-  return (
-    <div className="sidebar-light">
-      <div className="light-header">Conversations</div>
-      <div className="top-tabs">
-        <div className="top-tab active">Conversations</div>
-        <div className="top-tab">Manual Actions</div>
-        <div className="top-tab">Snippets</div>
-        <div className="top-tab">Trigger Links</div>
-      </div>
-      
-      <div className="light-content">
-        <div className="btn-new">
-          <Plus size={16} /> New
-        </div>
-
-        <div className="sub-nav-group">
-          <div className="sub-nav-header" style={{backgroundColor: '#4B5563', color: 'white', padding: '8px', borderRadius: '4px', marginBottom: '12px'}}>
-            <div style={{display: 'flex', flexDirection: 'column'}}>
-              <span style={{color: '#9CA3AF', fontSize: '11px'}}>Team Inbox</span>
-              <span>Start New Conversation</span>
-            </div>
-            <ChevronDown size={14} />
-          </div>
-          
-          <div style={{marginBottom: '16px'}}>
-             <div className="sub-nav-item">Unread</div>
-             <div className="sub-nav-item">Recents</div>
-             <div className="sub-nav-item">Starred</div>
-             <div className="sub-nav-item active">All</div>
-          </div>
-        </div>
-
-        <div className="sub-nav-group">
-          <div className="sub-nav-header">
-            <span>My Inbox</span>
-            <ChevronDown size={14} />
-          </div>
-          <div className="sub-nav-item" style={{display: 'flex', alignItems: 'center', gap: '8px'}}><User size={14}/> Assigned to me</div>
-          <div className="sub-nav-item">Unread</div>
-          <div className="sub-nav-item">Recents</div>
-          <div className="sub-nav-item">Starred</div>
-          <div className="sub-nav-item">All</div>
-        </div>
-
-        <div className="sub-nav-group">
-          <div className="sub-nav-header">
-            <span style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-               Internal Chat
-            </span>
-          </div>
-          <div className="sub-nav-item">Unread</div>
-          <div className="sub-nav-item">All</div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const dummyConversations = [
   { id: 1, name: 'Justin Garcia', time: '3:34 PM', preview: 'Hey Justin! Just got your quote fo...', initials: 'JG', color: '#71cf88', active: true, unread: true },
@@ -297,104 +186,13 @@ const Volume2Icon = () => (
   </svg>
 )
 
-const ContactSidebar = () => {
-  return (
-    <div className="contact-sidebar">
-      <div className="top-right-nav">
-        <div className="nav-icon bg-green"><Phone size={14} fill="currentColor" /></div>
-        <div className="nav-icon bg-purple">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l3 6 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1z"/></svg>
-          Ask AI
-        </div>
-        <div className="nav-icon bg-red">
-           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 11l18 0"/><path d="M3 17l18 0"/><path d="M3 5l18 0"/></svg>
-           <div className="notification-dot"></div>
-        </div>
-        <div className="nav-icon bg-red" style={{backgroundColor: '#F97316'}}>
-           <Bell size={14} fill="currentColor" />
-        </div>
-        <div className="nav-icon" style={{backgroundColor: '#60A5FA'}}>
-           <HelpCircle size={14} color="white"/>
-        </div>
-        <div className="nav-icon" style={{backgroundColor: '#71cf88', color: 'white'}}>JG</div>
-      </div>
 
-      <div className="contact-profile">
-        <div className="profile-avatar-lg">
-          JG
-          <div style={{position: 'absolute', backgroundColor: 'transparent', padding: '4px', right: '40px', bottom: '110px'}}></div>
-        </div>
-        <div className="profile-name">
-          Justin Garcia <Link size={16} color="#3B82F6" />
-        </div>
-        <div className="profile-actions">
-          <button className="round-btn"><Phone size={16} /></button>
-          <button className="round-btn"><Mail size={16} /></button>
-        </div>
-      </div>
-
-      <div className="accordion-section">
-        <div className="accordion-header">
-          <span>Contact</span>
-          <ChevronDown size={16} />
-        </div>
-        <div className="accordion-content">
-          <div className="contact-detail-row">
-            <div className="detail-icon-text"><Mail size={14}/> Email</div>
-            <Plus size={14} color="#3B82F6" cursor="pointer"/>
-          </div>
-          <div className="contact-detail-row">
-            <div className="detail-icon-text"><Phone size={14}/> Phone</div>
-            <Plus size={14} color="#3B82F6" cursor="pointer"/>
-          </div>
-          <div className="detail-value">• +63 961 348 0474</div>
-        </div>
-      </div>
-      
-      <div className="accordion-section">
-        <div className="accordion-header" style={{color: '#6B7280', fontWeight: 500}}>
-          Owner (Assigned to)
-        </div>
-        <div className="accordion-content">
-          <div style={{color: '#9CA3AF', fontSize: '13px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-            Unassigned <ChevronDown size={14} />
-          </div>
-        </div>
-      </div>
-      
-      <div className="accordion-section">
-        <div className="accordion-header" style={{color: '#6B7280', fontWeight: 500}}>
-          Followers<br/>
-          <span style={{fontSize: '11px', fontWeight: 'normal'}}>Search followers</span>
-        </div>
-      </div>
-
-      <div className="accordion-section">
-        <div className="accordion-header" style={{color: '#6B7280', fontWeight: 500}}>
-          Tags
-          <ChevronDown size={14} />
-        </div>
-      </div>
-
-      <div className="accordion-section">
-        <div className="accordion-header" style={{color: '#6B7280', fontWeight: 500}}>
-          Active Automations
-          <ChevronDown size={14} />
-        </div>
-      </div>
-
-    </div>
-  );
-};
 
 const App = () => {
   return (
     <div className="app-container">
-      <SidebarDark />
-      <SidebarLight />
       <ConversationsList />
       <ChatArea />
-      <ContactSidebar />
     </div>
   );
 };
